@@ -1,5 +1,8 @@
 ;; emacs configuration
 
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 (setq js-indent-level 2)
 
 (setq-default ispell-program-name "aspell")
@@ -82,7 +85,7 @@
 ;; (setq package-archives (cons '("tromey" . "http://tromey.com/elpa/") package-archives))
 ;; (package-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(add-to-list 'load-path "~/.emacs.d/el-get")
 
 (require 'el-get)
 
@@ -182,3 +185,16 @@
                                    (smex-major-mode-commands)))
 
 (load "/Users/acanals/.emacs.d/nxhtml/autostart.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(js2-auto-indent-p t)
+ '(js2-cleanup-whitespace t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
