@@ -20,7 +20,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (delete-selection-mode t)
-;; (scroll-bar-mode -1)
+(scroll-bar-mode -1)
 ;; (tool-bar-mode -1)
 (blink-cursor-mode t)
 (show-paren-mode t)
@@ -33,6 +33,7 @@
 
 (require 'ido)
 (ido-mode t)
+
 
 
 (defun ruby-mode-hook ()
@@ -134,6 +135,10 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+(require 'autopair)
+(autopair-global-mode 1)
+(setq autopair-autowrap t)
+
 ;; Markdown Mode
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)
@@ -184,7 +189,7 @@
                                    (global-set-key [(shift meta x)] 'smex-major-mode-commands)
                                    (smex-major-mode-commands)))
 
-(load "/Users/acanals/.emacs.d/nxhtml/autostart.el")
+;;(load "/Users/acanals/.emacs.d/nxhtml/autostart.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

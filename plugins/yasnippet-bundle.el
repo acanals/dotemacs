@@ -1912,6 +1912,8 @@ Use multiple times to bind different COMMANDs to the same KEY."
 '(
   ("time" "`(current-time-string)`" "(current time)" nil nil)
   ("email" "`user-mail-address`" "(user's email)" nil nil)
+  ("-" "-------------------" nil nil)
+  ("--" "-------------------------------------------------------------" nil nil)
   )
 nil)
 
@@ -2421,6 +2423,26 @@ end do
   ("body" "<body$1>
   $0
 </body>" "<body>...</body>" nil nil)
+    
+;; emailbuilder/erb shortcuts
+  ("image" "<%= image_tag(\'${1:image_name}\', {:style=> \"display:$2; margin:$3;\"}) %>" nil "image")
+  ("image.solo_image" "image_tag(\'${1:image_name}\', {:style=> \"display:$2; margin:$3;\"})" nil "image")
+  ("image.width" "<%= image(\'${1:image_name}\', :width) %>" nil "image")
+  ("image.solo_width" "image(\'${1:image_name}\', :width)" nil "image")
+  ("image.height" "<%= image(\'${1:image_name}\', :height) %>" nil "image")
+  ("image.solo_height" "image(\'${1:image_name}\', :height)" nil "image")
+  ("content" "<%= content(:\$1\) %>" nil "content")
+  ("content.solo" "content(:\$1\)" nil "content")
+  ("content.layout" "<%= layout(:\$1\) %>" nil "content")
+  ("content.layout_solo" "layout(:\$1\)" nil "content")
+  ("content.arrow" "<%= content(:$1, :link, \'${2:image_name}\') %>" nil "content")
+  ("%.no_output" "<% $0 %>" nil "%")
+  ("%.output" "<%= $0 %>" nil "%")
+  ("partial" "<%= render_partial(\'$0\') %>" nil nil)
+  ("font" "<%= font(:\$1\) %>" nil "font")
+  ("font.solo" "font(:\$1\)" nil "font")
+  ("font.body" "<%= font(:font_body) %>" nil "font")
+;; end emailbuilder shortcuts
   )
 'text-mode)
 
