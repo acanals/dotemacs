@@ -1,7 +1,9 @@
 ;; emacs configuration
+(require 'magit)
+;;(autoload 'js2-mode "js2" nil t)
 
-(autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(global-auto-revert-mode)
+(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
 
 (setq js-indent-level 2)
 
@@ -19,7 +21,18 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(delete-selection-mode t)
+(setq path-to-ctags "/usr/local/bin/ctags") ;; <- your ctags path here
+  (defun create-tags (dir-name)
+    "Create tags file."
+    (interactive "DDirectory: ")
+    (shell-command
+     (format "%s -f %s/TAGS -e -R %s" path-to-ctags dir-name (directory-file-name dir-name)))
+  )
+
+;;(find-library (file-name-sans-extension (symbol-file major-mode)))
+
+
+(delete-selection-mode 1)
 (scroll-bar-mode -1)
 ;; (tool-bar-mode -1)
 (blink-cursor-mode t)
@@ -64,10 +77,11 @@
   (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode)))
 
 (defun css-mode-hook ()
-  (autoload 'css-mode "css-mode" nil t)
+  (autoload 'css-mode 'load-path "~/.emacs.d/css-mode.el" nil t)
+  (add-to-list 'auto-mode-alist '("\\.css$" . yaml-mode))
   (add-hook 'css-mode-hook '(lambda ()
-                              (setq css-indent-level 2)
-                              (setq css-indent-offset 2))))
+                              (setq css-indent-offset 4)
+                              (setq css-indent-offset 4))))
 (defun is-rails-project ()
   (when (textmate-project-root)
     (file-exists-p (expand-file-name "config/environment.rb" (textmate-project-root)))))
@@ -85,6 +99,7 @@
 ;; (require 'package)
 ;; (setq package-archives (cons '("tromey" . "http://tromey.com/elpa/") package-archives))
 ;; (package-initialize)
+
 
 (add-to-list 'load-path "~/.emacs.d/el-get")
 
@@ -115,11 +130,11 @@
                :url "https://github.com/crazycode/rhtml.git"
                :features rhtml-mode
                :after (lambda () (rhtml-mode-hook)))
-        (:name yaml-mode 
-               :type git
-               :url "http://github.com/yoshiki/yaml-mode.git"
-               :features yaml-mode
-               :after (lambda () (yaml-mode-hook)))
+        ;; (:name yaml-mode 
+        ;;        :type git
+        ;;        :url "http://github.com/yoshiki/yaml-mode.git"
+        ;;        :features yaml-mode
+        ;;        :after (lambda () (yaml-mode-hook)))
         ))
 (el-get 'sync)
 
@@ -203,3 +218,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+
+;; Wild Stuff
+
+(defun detect-major-mode ()
+  (interactive)
+  (find-library (file-name-sans-extension (symbol-file major-mode)))
+  (global-set-key (kbd "C-c m") 'detect-major-mode))
+
+;; (global-set-key (kbd "C-c m") (lambda ()
+;;                                 (interactive)
+;;                                 (find-library (file-name-sans-extension (symbol-file major-mode)))
+;;                                 ))
+
