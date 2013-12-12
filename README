@@ -1,3 +1,3 @@
 This is my personal emacs setup. Feel free to use anything you find here. Also, look through and make sure that you have your init.el file configured correctly. PRO-TIP: Before you start crying, run emacs from the command line with --debug-init to see where things break. 
 
-$ emacs --debug-init 
+open -a /Applications/Emacs.app --args --debug-init
