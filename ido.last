@@ -1,0 +1,81 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/css/" . "modules/")
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/modules/" . "movie-details/")
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/" . "require/")
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/" . "css/")
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/" . "public/")
+ ("/Users/armandocanals/Projects/Work_Projects/" . "Dolby-heroku/")
+ ("/Users/armandocanals/Projects/" . "Work_Projects/")
+ ("/Users/armandocanals/" . "dotemacs/")
+ ("/Users/armandocanals/dotemacs/" . "misc/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/"
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/css/"
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/css/modules/"
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/require/"
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/plugins/"
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/modules/movie-details/"
+ "/Users/armandocanals/dotemacs/"
+ "/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/modules/movie-carousel-featured-content/"
+ "/Users/armandocanals/dotemacs/misc/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "index.html"
+ "responsive-modules.css"
+ "movie-carousel-featured-content.css"
+ "showtimes-map.css"
+ "dolby-global-environment.js"
+ "responsive.css"
+ "movie-details-featured-content.css"
+ "touche.js"
+ "movie-details.js"
+ "p12-theater-locator.css"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/css/" (21629 23296 0 0) "universal-nav-standalone-styles.css" "themes.css" "styles.css" "responsive.css" "responsive-modules.css" "modules/" "mocha.css" "jasmine.css" "editorStyles.css" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/" (21627 46728 0 0) "uploadedImages/" "movie-details.html" "js/" "index.html" "img/" "fonts/" "css/" ".DS_Store" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/css/modules/" (21627 8392 0 0) "t3-landing-page-touts.css" "t2-group-touts.css" "t1-tout.css" "showtimes-map.css" "p9-panel-display.css" "p8-feature-list.css" "p7-professional-details.css" "p6-manufacturers.css" "p5-category-touts.css" "p4-left-right-editorial.css" "p3-centered-editorial.css" "p2-news.css" "p14-featured-search-result.css" "p13-partners-gallery.css" "p12-theater-locator.css" "p11-gallery.css" "p10-gallery-preview.css" "p1-featured-3up.css" "o1-overview.css" "n5-back-to-top.css" "n3-minimal-header.css" "n2-footer.css" "n1-top-header.css" "movie-details-featured-content.css" "movie-carousel-featured-content.css" "m8-iframe.css" "m7-featured-content.css" "m6-hotspot-chapter-viewer.css" "m5-hotspots.css" "m4-chapter-viewer.css" "m3-image-slideshow.css" "m2-video.css" "m1-image.css" "h5-pillar-page-header.css" "h4-detail-page-header.css" "h3-simple-header.css" "h2-editorial-header.css" "h1-tout-header.css" "dolby-video.css" "category-touts.css" "c9-gutter-cta.css" "c8-gutter-tout.css" "c7-gutter-list.css" "c6-inline-form.css" "c5-inline-table.css" "c4-inline-pull-quote.css" "c2-inline-image.css" "c1-inline-content.css" "c0-content-container.css" "b3-share.css" "b2-support.css" "b1-more-like-this.css" "atmos-timeline.css" "atmos-timeline-ui.css" "atmos-overview.css" "atmos-hero.css" "atmos-filmmakers.css" "atmos-controller.css" "atmos-band.css" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/modules/movie-details/" (21626 57581 0 0) "movie-details.js" "index.js" "../" "./")
+
+ ("/Users/armandocanals/dotemacs/" (21626 26599 0 0) "README" "plugins/" "misc/" "init.el" "ido.last" "elpa/" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/require/" (21620 1777 0 0) "index.js" "dolby-global.js" "dolby-global-utilities.js" "dolby-global-settings.js" "dolby-global-router.js" "dolby-global-gridoverlay.js" "dolby-global-environment.js" "dolby-global-analytics.js" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/secondary/" (21620 1777 0 0) "scripted.js" "jquery.simplescroll.js" "jquery.simpleknob.js" "index.js" "form-actions.js" "dolby-viewport.js" "dolby-video.js" "dolby-video-sequence.js" "dolby-timer.js" "dolby-takeover.js" "dolby-tab.js" "dolby-stickynav.js" "dolby-spin.js" "dolby-sequencer.js" "dolby-scrolltotop.js" "dolby-scroller.js" "dolby-parallax.js" "dolby-paddles.js" "dolby-navigationdots.js" "dolby-modal.js" "dolby-fade.js" "dolby-evenheights.js" "dolby-draggable.js" "dolby-dial.js" "dolby-carousel.js" "dolby-carousel-fade.js" "dolby-audio.js" "dolby-appender.js" "debuggr.js" "base-component.js" "autoplay-test.js" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/libs/" (21620 1777 0 0) "underscore.js" "StackBlur.js" "spin.js" "soundmanager.js" "sinon.js" "require.js" "polyfill-lte-ie7/" "polyfill-all/" "polyfill/" "modernizr.js" "mocha.js" "jquery.url.min.js" "jquery.js" "iq.js" "iq.bak.js" "html2canvas.js" "gmaps.js" "enquire.js" "chai.js" "bootstrap.js" "async.js" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/plugins/" (21626 44808 0 0) "touche.js" "requirejs-text.js" "rAF.js" "jquery.throttle-debounce.js" "jquery.spritely.js" "jquery.placeholder.js" "jquery.infinitescroll.js" "jquery.imagesloaded.js" "jquery.hoverIntent.js" "jquery.hammer.js" "jquery.flowplayer.js" "jquery.eventie.js" "jquery.eventemitter.js" "jquery.cookie.js" "jquery.bez.js" "iscroll.js" "index.js" "gmaps.infobox.js" "dolby-iscroll.js" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/modules/movie-carousel-featured-content/" (21626 41888 0 0) "movie-carousel-featured-content.js" "index.js" "../" "./")
+
+ ("/Users/armandocanals/" (21626 23999 0 0) "Public/" "Projects/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "dotemacs/" "Documents/" "Desktop/" "Creative Cloud Files/" "chef-server-core-12.0.0-1.el5.x86_64.rpm" "Applications/" ".zshrc" ".zsh_history" ".zlogin" ".zcompdump" ".viminfo" ".Trash/" ".subversion/" ".ssh/" ".rvm/" ".profile" ".local/" ".irb-history" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".CFUserTextEncoding" ".bashrc" ".bash_profile" ".bash_history" "../" "./")
+
+ ("/Users/armandocanals/dotemacs/misc/" (21625 25216 0 0) "yasnippet-bundle.el" "global-key-bindings.el" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/modules/" (21620 53659 0 0) "t3-landing-page-touts/" "t2-group-touts/" "t1-tout/" "showtimes-map/" "p9-panel-display/" "p7-professional-details/" "p6-manufacturers/" "p5-category-touts/" "p4-left-right-editorial/" "p3-centered-editorial/" "p2-news/" "p14-featured-search-result/" "p13-partners-gallery/" "p12-theater-locator/" "p11-gallery/" "p10-gallery-preview/" "p1-featured-3up/" "n5-back-to-top/" "n2-footer/" "n1-top-header/" "movie-details/" "movie-carousel-featured-content/" "m7-featured-content/" "m5-hotspots/" "m4-chapter-viewer/" "m3-image-slideshow/" "m2-video/" "m1-image/" "h5-pillar-page-header/" "h4-detail-page-header/" "h2-editorial-header/" "h1-tout-header/" "dolby-video/" "category-touts/" "c6-inline-form/" "c5-inline-table/" "b3-share/" "b1-more-like-this/" "atmos-timeline/" "atmos-overview/" "atmos-hero/" "atmos-filmmakers/" "atmos-controller/" "atmos-band/" ".DS_Store" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/public/js/" (21620 1777 0 0) "secondary/" "require/" "plugins/" "modules/" "libs/" "functions.js" "common.js" ".DS_Store" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/Dolby-heroku/" (21622 21615 0 0) "README.md" "public/" "notes" "mock_json/" "Gemfile.lock" "Gemfile" "dolby-server.rb" "config.ru" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/armandocanals/Projects/Work_Projects/" (21622 13528 0 0) "Dolby-heroku/" "Dolby/" "../" "./")
+
+ ("/Users/armandocanals/Projects/" (21622 13523 0 0) "Work_Projects/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
